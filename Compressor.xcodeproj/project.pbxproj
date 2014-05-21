@@ -275,6 +275,14 @@
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
 		4FF0171A134E153A001447BA /* heapbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF01719134E153A001447BA /* heapbuf.h */; };
+		908ED319192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31A192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31B192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31C192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31D192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31E192CC3A40053938C /* Smoothing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 908ED317192CC3A40053938C /* Smoothing.cpp */; };
+		908ED31F192CC3A40053938C /* Smoothing.h in Headers */ = {isa = PBXBuildFile; fileRef = 908ED318192CC3A40053938C /* Smoothing.h */; };
+		908ED320192CC3A40053938C /* Smoothing.h in Headers */ = {isa = PBXBuildFile; fileRef = 908ED318192CC3A40053938C /* Smoothing.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -418,19 +426,33 @@
 			remoteGlobalIDString = 4F9828AA140A9EB700F3FCC1;
 			remoteInfo = "VST3_32&64_intel";
 		};
-		4FA708BE158B47F000BFC572 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F4AD1F11409A56A0068A6D4 /* base.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4FA708BC158B47D200BFC572;
-			remoteInfo = base_32;
-		};
 		4FB6004F1567CB990020189A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = "lice_32&64_intel";
+		};
+		908ED324192CC3A40053938C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F4AD1F11409A56A0068A6D4 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4306DEB17DDC8800075E8C4;
+			remoteInfo = "base_libc++";
+		};
+		908ED326192CC3A40053938C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F4AD1F11409A56A0068A6D4 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4128A5417EB4B0B00114E59;
+			remoteInfo = base_ios;
+		};
+		908ED328192CC3A40053938C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F4AD1F11409A56A0068A6D4 /* base.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F412026A14C41F68008F9C84;
+			remoteInfo = base_codecoverage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -649,6 +671,8 @@
 		52FBBED00D0CF139001C8B8A /* Compressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = Compressor.cpp; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED20D0CF13D001C8B8A /* Compressor.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = Compressor.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		52FBBED30D0CF143001C8B8A /* resource.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = resource.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		908ED317192CC3A40053938C /* Smoothing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Smoothing.cpp; path = HelperFunctions/Smoothing.cpp; sourceTree = "<group>"; };
+		908ED318192CC3A40053938C /* Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Smoothing.h; path = HelperFunctions/Smoothing.h; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -734,6 +758,8 @@
 				52FBBED30D0CF143001C8B8A /* resource.h */,
 				52FBBED20D0CF13D001C8B8A /* Compressor.h */,
 				52FBBED00D0CF139001C8B8A /* Compressor.cpp */,
+				908ED317192CC3A40053938C /* Smoothing.cpp */,
+				908ED318192CC3A40053938C /* Smoothing.h */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				32C88E010371C26100C91783 /* Other Sources */,
 				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
@@ -1001,7 +1027,9 @@
 			isa = PBXGroup;
 			children = (
 				4F4AD1F61409A56A0068A6D4 /* libbase.a */,
-				4FA708BF158B47F000BFC572 /* libbase32.a */,
+				908ED325192CC3A40053938C /* libbase_libc++.a */,
+				908ED327192CC3A40053938C /* libbase_ios.a */,
+				908ED329192CC3A40053938C /* libbase_codecoverage.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1337,6 +1365,7 @@
 				4F3AE17B12C0E5E2001FD7A4 /* resource.h in Headers */,
 				4F3AE17C12C0E5E2001FD7A4 /* Compressor.h in Headers */,
 				4FF016F7134E14E2001447BA /* mutex.h in Headers */,
+				908ED320192CC3A40053938C /* Smoothing.h in Headers */,
 				4FF016F8134E14E2001447BA /* ptrlist.h in Headers */,
 				4FF016F9134E14E2001447BA /* wdlstring.h in Headers */,
 				4FD16D1913B634E5001D0217 /* swell.h in Headers */,
@@ -1408,6 +1437,7 @@
 				4F78DAA013B640050032E0F3 /* IPopupMenu.h in Headers */,
 				4F78DAA113B640050032E0F3 /* IPlugStructs.h in Headers */,
 				4F78DAA213B640050032E0F3 /* IPlug_Prefix.pch in Headers */,
+				908ED31F192CC3A40053938C /* Smoothing.h in Headers */,
 				4F78DAA313B640050032E0F3 /* IParam.h in Headers */,
 				4F78DAA413B640050032E0F3 /* IMidiQueue.h in Headers */,
 				4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */,
@@ -1634,11 +1664,25 @@
 			remoteRef = 4F8D4C1613E976A7004F7633 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4FA708BF158B47F000BFC572 /* libbase32.a */ = {
+		908ED325192CC3A40053938C /* libbase_libc++.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libbase32.a;
-			remoteRef = 4FA708BE158B47F000BFC572 /* PBXContainerItemProxy */;
+			path = "libbase_libc++.a";
+			remoteRef = 908ED324192CC3A40053938C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		908ED327192CC3A40053938C /* libbase_ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase_ios.a;
+			remoteRef = 908ED326192CC3A40053938C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		908ED329192CC3A40053938C /* libbase_codecoverage.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase_codecoverage.a;
+			remoteRef = 908ED328192CC3A40053938C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1745,6 +1789,7 @@
 				4F78D9BC13B63BA50032E0F3 /* IPlugStructs.cpp in Sources */,
 				4F78D9BD13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				4F78D9BF13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
+				908ED31A192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4F78D9C013B63BA50032E0F3 /* IGraphics.cpp in Sources */,
 				4F78D9C113B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
 				4F78D9C213B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
@@ -1773,6 +1818,7 @@
 				4F78D95313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D95513B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				4F78D95C13B63BA50032E0F3 /* IParam.cpp in Sources */,
+				908ED31C192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4F78D96113B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */,
 				4F78DA0A13B63CD90032E0F3 /* IPlugAU_ViewFactory.mm in Sources */,
@@ -1791,6 +1837,7 @@
 				4F7F5C5213E95EC8002918FD /* IPlugStructs.cpp in Sources */,
 				4F7F5C5313E95EC8002918FD /* Hosts.cpp in Sources */,
 				4F7F5C5413E95EC8002918FD /* IGraphicsMac.mm in Sources */,
+				908ED31D192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4F7F5C5513E95EC8002918FD /* IGraphics.cpp in Sources */,
 				4F7F5C5613E95EC8002918FD /* IGraphicsCarbon.cpp in Sources */,
 				4F7F5C5713E95EC8002918FD /* IGraphicsCocoa.mm in Sources */,
@@ -1833,6 +1880,7 @@
 				4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */,
 				4F9828C6140A9EB700F3FCC1 /* pluginview.cpp in Sources */,
 				4F9828C7140A9EB700F3FCC1 /* macmain.cpp in Sources */,
+				908ED31B192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4F9828C8140A9EB700F3FCC1 /* pluginfactoryvst3.cpp in Sources */,
 				4F9828C9140A9EB700F3FCC1 /* vstaudioeffect.cpp in Sources */,
 				4F9828CA140A9EB700F3FCC1 /* vstbus.cpp in Sources */,
@@ -1861,6 +1909,7 @@
 				4FB6001C1567CB0A0020189A /* Hosts.cpp in Sources */,
 				4FB6001D1567CB0A0020189A /* IGraphicsMac.mm in Sources */,
 				4FB6001E1567CB0A0020189A /* IGraphics.cpp in Sources */,
+				908ED31E192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4FB6001F1567CB0A0020189A /* IGraphicsCarbon.cpp in Sources */,
 				4FB600201567CB0A0020189A /* IGraphicsCocoa.mm in Sources */,
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
@@ -1898,6 +1947,7 @@
 				4F78D90D13B63BA50032E0F3 /* Hosts.cpp in Sources */,
 				4F78D90F13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */,
 				4F78D91013B63BA50032E0F3 /* IGraphics.cpp in Sources */,
+				908ED319192CC3A40053938C /* Smoothing.cpp in Sources */,
 				4F78D91113B63BA50032E0F3 /* IGraphicsCarbon.cpp in Sources */,
 				4F78D91213B63BA50032E0F3 /* IGraphicsCocoa.mm in Sources */,
 				4F78D91313B63BA50032E0F3 /* Log.cpp in Sources */,
@@ -2222,6 +2272,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = "$(DEBUG_OPTIMIZE)";
 				PRODUCT_NAME = "AllOSX_32&64_intel";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -2232,6 +2283,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = "AllOSX_32&64_intel";
+				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2240,6 +2292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "AllOSX_32&64_intel";
+				SDKROOT = macosx;
 			};
 			name = Tracer;
 		};
