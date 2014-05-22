@@ -20,14 +20,16 @@ public:
 	int processSamples(double *In, double *Out, int nSamples);
 	inline double processOneSample(double In)
     {
-        double Out = m_buffer[79];
+        double Out = m_buffer[m_LastSample];
         memmove(&m_buffer[1], &m_buffer[0], sizeof(m_buffer) - sizeof(*m_buffer));
         m_buffer[0] = In;
         return Out;
     };
     
 protected:
-	double m_buffer[80];
+    int m_SamplesOfDelay = 80;
+    int m_LastSample = m_SamplesOfDelay-1;
+	double m_buffer[m_SamplesOfDelay];
 };
 
 
