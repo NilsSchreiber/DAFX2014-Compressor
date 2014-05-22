@@ -17,9 +17,10 @@ CDelay::~CDelay(void)
 
 void CDelay::reset(void)
 {
-    int i;
-    for (i = 0; i<80; i++) {
-        m_buffer[i] = 0;
+    int ii;
+    for (ii = 0; ii<m_SamplesOfDelay; ii++)
+    {
+        m_buffer[ii] = 0;
     }
 }
 
